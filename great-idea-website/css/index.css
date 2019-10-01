@@ -70,18 +70,7 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-h1 {
-	font-family: 'Roboto', sans-serif;
-}
-
 /* header */
-
-header {
-	background-color: black;
-	position: sticky;
-	top: 0;
-	z-index: 10;
-}
 
 nav {
 	display: inline-block;
@@ -96,10 +85,9 @@ nav a {
 }
 
 img.logo {
-	margin-left: 58px;
+	margin-left: 55px;
 	height: 100%;
 	vertical-align: middle;
-	filter:invert(100%);
 }
 
 /* cta */
@@ -108,8 +96,27 @@ img.logo {
 	border: black 1px solid;
     padding: 6px 40px;
 	font-size: 15px;
-	
 }
+
+/* stretch css animation goal */
+.cta button:hover {
+	animation: makebuttonblue 1s infinite;
+}
+
+@keyframes makebuttonblue {
+	0% {
+		background-color: #ffffff;
+	  }
+	33% {
+		background-color: #b7e1fa;
+	  }
+	66% {
+		background-color: #73c8fa;
+	  }
+	100% {
+		background-color: #009efa;
+	  }
+  }
 
 .cta h1 {
 	font-size: 70px;
